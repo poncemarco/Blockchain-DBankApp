@@ -28,7 +28,10 @@
   "networks": {
     "local": {
       "bind": "127.0.0.1:8000",
-      "type": "ephemeral"
+      "type": "ephemeral",
+      "routes": {
+        "/": { "type": "rewrite", "path": "/?canisterId=ryjl3-tyaaa-aaaaa-aaaba-cai" }
+      }
     }
   },
   "version": 1

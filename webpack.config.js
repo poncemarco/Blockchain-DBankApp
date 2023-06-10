@@ -113,9 +113,14 @@ module.exports = {
           "^/api": "/api",
         },
       },
-    },
     hot: true,
     watchFiles: [path.resolve(__dirname, "src", frontendDirectory)],
     liveReload: true,
+    contentBase: path.join(__dirname, 'dist'),
+    compress:true,
+    port:8000,
+    historyApiFallback: true,
+    },
+    
   },
 };
